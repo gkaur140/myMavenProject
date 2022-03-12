@@ -16,16 +16,9 @@ public class LandingPage extends BaseTest {
 	@FindBy(css = "div.header_user_info")
 	WebElement signInButton;
 
-	@FindBy(id = "header_logo")
-	WebElement logo;
-
 	public SignInPage clickSignInButton() {
 		signInButton.click();
 		return new SignInPage();
-	}
-
-	public boolean isLogoDisplayed() {
-		return logo.isDisplayed();
 	}
 
 }

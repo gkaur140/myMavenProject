@@ -12,11 +12,11 @@ public class MyAccountPage extends BaseTest {
 		PageFactory.initElements(wd, this);
 	}
 
-	@FindBy(css = "div.header_user_info a span")
-	WebElement userName;
+	@FindBy(css = "li a[title=\"Women\"]")
+	WebElement textWomen;
 
-	public String getUserNameText() {
-		String userNameText = userName.getText();
-		return userNameText;
+	public WomenCategoryPage clickWomenText() {
+		textWomen.click();
+		return new WomenCategoryPage();
 	}
 }

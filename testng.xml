@@ -14,8 +14,8 @@
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="pagesTest.SignInPageTest" />
-			<class name="pagesTest.LandingPageTest" />
+			<class name="pagesTest.ShoppingCartSlipPageConfirmationTest" />
+			
 
 		</classes>
 	</test> <!-- Test -->
